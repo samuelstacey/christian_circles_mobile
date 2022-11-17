@@ -1,0 +1,16 @@
+{
+  "client_id" : "2396a460-9f05-4f35-b12f-74678150cf83",
+  "redirect_uri" : "msauth://com.christchurch.christiancircles.christian_circles_mobile/VzSiQcXRmi2kyjzcA%2BmYLEtbGVs%3D",
+  "account_mode" : "MULTIPLE",
+  "broker_redirect_uri_registered": false,
+  "authorities": [
+    {
+      "type": "B2C",
+      "authority_url": "https://christiancircles.b2clogin.com/christiancircles.onmicrosoft.com/B2C_1_signupsignin/",
+      "default": true
+    }
+  ],
+  "default_scopes": [
+    "https://christiancircles.onmicrosoft.com/2396a460-9f05-4f35-b12f-74678150cf83/Do.Anything"
+  ]
+}
