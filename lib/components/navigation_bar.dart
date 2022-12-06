@@ -5,7 +5,7 @@ BottomNavigationBar createNavBar(String title, BuildContext context) {
   return BottomNavigationBar(
     onTap: (index) {
       if (index == 0) {
-        Navigator.pushNamed(context, '/');
+        Navigator.pushNamed(context, '/home');
       } else if (index == 1) {
         Navigator.pushNamed(context, '/profile');
       } else if (index == 2) {

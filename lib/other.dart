@@ -44,3 +44,47 @@
 //     // );
 //   }
 // }
+
+
+// THESE ARE USEFUL:
+// TextButton(
+// onPressed: () async {
+// var subjects = await AzureB2C.getSubjects();
+// var info = await AzureB2C.getUserInfo(subjects![0]);
+// setState(() {
+// _subjects = subjects;
+// _retdata = json.encode(info);
+// });
+// },
+// child: Text("UserInfo")),
+
+// TextButton(
+// onPressed: () async {
+// var token = await AzureB2C.getAccessToken(_subjects![0]);
+// setState(() {
+// _retdata = json.encode(token);
+// });
+// },
+// child: Text("AccessToken")),
+
+// TextButton(
+// onPressed: () async {
+// var data = await AzureB2C.policyTriggerSilently(
+// _subjects![0],
+// _configuration!.defaultAuthority.policyName,
+// _configuration!.defaultScopes!,
+// );
+// setState(() {
+// _retdata = data;
+// });
+// },
+// child: Text("Refresh")),
+
+// TextButton(
+// onPressed: () async {
+// var data = await AzureB2C.signOut(_subjects![0]);
+// setState(() {
+// _retdata = data;
+// });
+// },
+// child: Text("LogOut")),
